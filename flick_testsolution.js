@@ -4,7 +4,7 @@ function flattener(arr) {
   // checkAndPush loops over an array and uses a conditional to decide whether to
   // push elements of the array to the flattened outputArray.
 
-  // If an array is found, pushNestedArray will deal with looping through that
+  // If an array is found, pushNestedArray is called to deal with looping through that
   // sub-array and pushing to outputArray.
   // Whenever pushNestedArray finds another nested array, it calls itself (ie is a
   // recursive function), and passes the array through to be dealt with as before.
