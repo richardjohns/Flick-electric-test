@@ -1,10 +1,24 @@
 function flattener(arr) {
   outputArray = []
 
-  function checkAndPush(element) {
+  // checkAndPush loops over an array and uses a conditional to decide whether to
+  // push elements of the array to the flattened outputArray.
 
+  // If an array is found, pushNestedArray will deal with looping through that
+  // sub-array and pushing to outputArray.
+  // Whenever pushNestedArray finds another nested array, it calls itself (ie is a
+  // recursive function), and passes the array through to be dealt with as before.
+
+  // If a number is found instead, that is pushed to the outputArray.
+
+  // The use of a recursive function allows checkAndPush to deal with any number of
+  // levels of nested arrays ie 10 levels deep.
+
+  function checkAndPush(element) {
+    // functions are extracted as variables for re-use and better readability of the code.
     const isItemArray = item => Array.isArray(item)
     const pushToOutputArray = item => outputArray.push(item)
+
 
     function pushNestedArray(element) {
       element.forEach((item) => {
