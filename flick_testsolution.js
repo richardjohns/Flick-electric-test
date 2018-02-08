@@ -5,7 +5,7 @@ function flattener(arr) {
   // push elements of the array to the flattened outputArray.
 
   // If an array is found, pushNestedArray is called to deal with looping through that
-  // sub-array and pushing to outputArray.
+  // sub-array and pushing its items to outputArray.
   // Whenever pushNestedArray finds another nested array, it calls itself (ie is a
   // recursive function), and passes the array through to be dealt with as before.
 
