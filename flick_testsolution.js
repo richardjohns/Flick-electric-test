@@ -1,8 +1,10 @@
+// FLICK ELECTRIC TEST - RICHARD JOHNS - JAVASCRIPT SOLUTION
+
 function flattener(arr) {
   outputArray = []
 
-  // checkAndPush loops over an array and uses a conditional to decide whether to
-  // push elements of the array to the flattened outputArray.
+  // within flattener function, checkAndPush loops over an array and uses a conditional
+  // to decide whether to push elements of the array to the flattened outputArray.
 
   // If an array is found, pushNestedArray is called to deal with looping through that
   // sub-array and pushing its items to outputArray.
